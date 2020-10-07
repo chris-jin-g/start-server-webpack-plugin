@@ -2,11 +2,6 @@
 
 > Automatically start your server once Webpack's build completes.
 
-[![travis build](https://img.shields.io/travis/ericclemmons/start-server-webpack-plugin.svg)](https://travis-ci.org/ericclemmons/start-server-webpack-plugin)
-[![version](https://img.shields.io/npm/v/start-server-webpack-plugin.svg)](http://npm.im/start-server-webpack-plugin)
-[![downloads](https://img.shields.io/npm/dm/start-server-webpack-plugin.svg)](http://npm-stat.com/charts.html?package=start-server-webpack-plugin)
-[![MIT License](https://img.shields.io/npm/l/start-server-webpack-plugin.svg)](http://opensource.org/licenses/MIT)
-
 ### Installation
 
 ```shell
@@ -49,7 +44,3 @@ If you don't pass a name, the plugin will tell you the available names.
 You can use `nodeArgs` and `args` to pass arguments to node and your script, respectively. For example, you can use this to use the node debugger.
 
 To use Hot Module Reloading with your server code, set Webpack to "hot" mode and include the `webpack/hot/poll` or `webpack/hot/signal` modules. Make sure they are part of your server bundle, e.g. if you are using `node-externals` put them in your whitelist. The latter module requires the `signal` option.
-
-### License
-
-> MIT License 2016 © Eric Clemmons
